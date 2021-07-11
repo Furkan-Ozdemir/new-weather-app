@@ -23,74 +23,74 @@ module.exports = async (lat, lon) => {
     const dayOne = {
       date: new Date(
         new Date(data.data.daily[0].dt * 1000).getTime()
-      ).toLocaleDateString("tr-TR", options),
-      currentTemp: data.data.current.temp,
-      maxTemp: data.data.daily[0].temp.max,
-      minTemp: data.data.daily[0].temp.min,
+      ).toLocaleDateString("en-US", options),
+      currentTemp: data.data.current.temp.toFixed(0),
+      maxTemp: data.data.daily[0].temp.max.toFixed(0),
+      minTemp: data.data.daily[0].temp.min.toFixed(0),
       weatherIcon: data.data.daily[0].weather[0].icon,
       description: data.data.daily[0].weather[0].description,
     };
     const dayTwo = {
       date: new Date(
         new Date(data.data.daily[1].dt * 1000).getTime()
-      ).toLocaleDateString("tr-TR", options),
-      currentTemp: data.data.current.temp,
-      maxTemp: data.data.daily[1].temp.max,
-      minTemp: data.data.daily[1].temp.min,
+      ).toLocaleDateString("en-US", options),
+      currentTemp: data.data.current.temp.toFixed(0),
+      maxTemp: data.data.daily[1].temp.max.toFixed(0),
+      minTemp: data.data.daily[1].temp.min.toFixed(0),
       weatherIcon: data.data.daily[1].weather[0].icon,
       description: data.data.daily[1].weather[0].description,
     };
     const dayThree = {
       date: new Date(
         new Date(data.data.daily[2].dt * 1000).getTime()
-      ).toLocaleDateString("tr-TR", options),
-      currentTemp: data.data.current.temp,
-      maxTemp: data.data.daily[2].temp.max,
-      minTemp: data.data.daily[2].temp.min,
+      ).toLocaleDateString("en-US", options),
+      currentTemp: data.data.current.temp.toFixed(0),
+      maxTemp: data.data.daily[2].temp.max.toFixed(0),
+      minTemp: data.data.daily[2].temp.min.toFixed(0),
       weatherIcon: data.data.daily[2].weather[0].icon,
       description: data.data.daily[2].weather[0].description,
     };
     const dayFour = {
       date: new Date(
         new Date(data.data.daily[3].dt * 1000).getTime()
-      ).toLocaleDateString("tr-TR", options),
-      currentTemp: data.data.current.temp,
-      maxTemp: data.data.daily[3].temp.max,
-      minTemp: data.data.daily[3].temp.min,
+      ).toLocaleDateString("en-US", options),
+      currentTemp: data.data.current.temp.toFixed(0),
+      maxTemp: data.data.daily[3].temp.max.toFixed(0),
+      minTemp: data.data.daily[3].temp.min.toFixed(0),
       weatherIcon: data.data.daily[3].weather[0].icon,
       description: data.data.daily[3].weather[0].description,
     };
     const dayFive = {
       date: new Date(
         new Date(data.data.daily[4].dt * 1000).getTime()
-      ).toLocaleDateString("tr-TR", options),
-      currentTemp: data.data.current.temp,
-      maxTemp: data.data.daily[4].temp.max,
-      minTemp: data.data.daily[4].temp.min,
+      ).toLocaleDateString("en-US", options),
+      currentTemp: data.data.current.temp.toFixed(0),
+      maxTemp: data.data.daily[4].temp.max.toFixed(0),
+      minTemp: data.data.daily[4].temp.min.toFixed(0),
       weatherIcon: data.data.daily[4].weather[0].icon,
       description: data.data.daily[4].weather[0].description,
     };
     const daySix = {
       date: new Date(
         new Date(data.data.daily[5].dt * 1000).getTime()
-      ).toLocaleDateString("tr-TR", options),
-      currentTemp: data.data.current.temp,
-      maxTemp: data.data.daily[5].temp.max,
-      minTemp: data.data.daily[5].temp.min,
+      ).toLocaleDateString("en-US", options),
+      currentTemp: data.data.current.temp.toFixed(0),
+      maxTemp: data.data.daily[5].temp.max.toFixed(0),
+      minTemp: data.data.daily[5].temp.min.toFixed(0),
       weatherIcon: data.data.daily[5].weather[0].icon,
       description: data.data.daily[5].weather[0].description,
     };
     const daySeven = {
       date: new Date(
         new Date(data.data.daily[6].dt * 1000).getTime()
-      ).toLocaleDateString("tr-TR", options),
-      currentTemp: data.data.current.temp,
-      maxTemp: data.data.daily[6].temp.max,
-      minTemp: data.data.daily[6].temp.min,
+      ).toLocaleDateString("en-US", options),
+      currentTemp: data.data.current.temp.toFixed(0),
+      maxTemp: data.data.daily[6].temp.max.toFixed(0),
+      minTemp: data.data.daily[6].temp.min.toFixed(0),
       weatherIcon: data.data.daily[6].weather[0].icon,
       description: data.data.daily[6].weather[0].description,
     };
-    // console.log(dayOne.description);
+    // console.log(typeof dayOne.currentTemp);
     return { dayOne, dayTwo, dayThree, dayFour, dayFive, daySix, daySeven };
   } catch (error) {
     console.error(error);

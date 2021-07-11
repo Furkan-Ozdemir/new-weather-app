@@ -37,12 +37,61 @@ app.post("/", (req, res) => {
         "https://openweathermap.org/img/wn/" +
         days.dayOne.weatherIcon +
         "@2x.png";
+      const iconUrlTwo =
+        "https://openweathermap.org/img/wn/" +
+        days.dayTwo.weatherIcon +
+        "@2x.png";
+      const iconUrlThree =
+        "https://openweathermap.org/img/wn/" +
+        days.dayThree.weatherIcon +
+        "@2x.png";
+      const iconUrlFour =
+        "https://openweathermap.org/img/wn/" +
+        days.dayFour.weatherIcon +
+        "@2x.png";
+      const iconUrlFive =
+        "https://openweathermap.org/img/wn/" +
+        days.dayFive.weatherIcon +
+        "@2x.png";
+      const iconUrlSix =
+        "https://openweathermap.org/img/wn/" +
+        days.daySix.weatherIcon +
+        "@2x.png";
+      const iconUrlSeven =
+        "https://openweathermap.org/img/wn/" +
+        days.daySeven.weatherIcon +
+        "@2x.png";
       console.log(days.dayOne.description);
       res.render("result", {
         query: enteredCityName,
+        dateOne: days.dayOne.date,
+        dateTwo: days.dayTwo.date,
+        dateThree: days.dayThree.date,
+        dateFour: days.dayFour.date,
+        dateFive: days.dayFive.date,
+        dateSix: days.daySix.date,
+        dateSeven: days.daySeven.date,
         temp: days.dayOne.currentTemp,
         description: days.dayOne.description,
-        iconUrl: iconUrl,
+        iconUrl,
+        tempTwo: days.dayTwo.maxTemp,
+        descriptionTwo: days.dayTwo.description,
+        iconUrlTwo,
+        tempThree: days.dayThree.maxTemp,
+        descriptionThree: days.dayThree.description,
+        iconUrlThree,
+        tempFour: days.dayFour.maxTemp,
+        descriptionFour: days.dayFour.description,
+        iconUrlFour,
+        tempFive: days.dayFive.maxTemp,
+        descriptionFive: days.dayFive.description,
+        iconUrlFive,
+        tempSix: days.daySix.maxTemp,
+        descriptionSix: days.daySix.description,
+        iconUrlSix,
+        tempSeven: days.daySeven.maxTemp,
+        descriptionSeven: days.daySeven.description,
+        iconUrlSeven,
       });
     });
     // console.log(dayOne.description);

@@ -8,19 +8,85 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="result.css">
   <title>Document</title>
 </head>
 
 <body>
+  <div class="container">
+    <div class="dayOne card">
+      <h3>
+        <%=dateOne%> is <%=temp%> &#176;C
+      </h3>
 
 
-  <div class="result">
-    <h3>the temperature is in <%=query%> is <%=temp%> degrees &#176;C</h3>
-    <p>The weather is <%= description %>
-    </p>
-    <img class="weatherImg" src=<%=iconUrl %>>
-    <a href="/">back</a>
+      <p>The weather is <%= description %>
+      </p>
+      <img class="weatherImg" src=<%=iconUrl %>>
+    </div>
+    <div class="dayTwo card">
+      <h3>
+        <%=dateTwo%> is <%=tempTwo%> &#176;C
+      </h3>
+
+
+      <p>The weather is <%= descriptionTwo %>
+      </p>
+      <img class="weatherImg" src=<%=iconUrlTwo %>>
+    </div>
+    <div class="dayThree card">
+      <h3>
+        <%=dateThree%> is <%=tempThree%> &#176;C
+      </h3>
+
+      <p>The weather is <%= descriptionThree %>
+      </p>
+      <img class="weatherImg" src=<%=iconUrlThree %>>
+    </div>
+    <div class="dayFour card">
+      <h3>
+        <%=dateFour%> is <%=tempFour%> &#176;C
+      </h3>
+
+
+      <p>The weather is <%= descriptionFour%>
+      </p>
+      <img class="weatherImg" src=<%=iconUrlFour%>>
+    </div>
+    <div class="dayFive card">
+      <h3>
+        <%=dateFive%> is <%=tempFive%> &#176;C
+      </h3>
+
+
+      <p>The weather is <%= descriptionFive %>
+      </p>
+      <img class="weatherImg" src=<%=iconUrlFive %>>
+    </div>
+    <div class="daySix card">
+      <h3>
+        <%=dateSix%> is <%=tempSix%> &#176;C
+      </h3>
+
+
+      <p>The weather is <%= descriptionSix %>
+      </p>
+      <img class="weatherImg" src=<%=iconUrlSix %>>
+    </div>
+    <div class="daySeven card">
+      <h3>
+        <%=dateSeven%> is <%=tempSeven%> &#176;C
+      </h3>
+
+      <p>The weather is <%= descriptionSeven %>
+      </p>
+      <img class="weatherImg" src=<%=iconUrlSeven %>>
+    </div>
+
   </div>
+  <a href="/">back</a>
+
+
 </body>
 
 </html>
